@@ -1,9 +1,16 @@
 version: "3.7"
 
 services:
-  bytestash:
+
+  app_proxy:
+      environment:
+      APP_HOST: Kavyum-bytestash_server_1
+      APP_PORT: 5000
+
+  server:
     image: ghcr.io/jordan-dalby/bytestash:latest
     restart: unless-stopped
+    user: "1000:1000"
     volumes:
       - ${APP_DATA_DIR}/data:/data/
     ports:
