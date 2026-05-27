@@ -2,8 +2,8 @@ version: "3.7"
 
 services:
   bytestash:
-    image: "ghcr.io/jordan-dalby/bytestash:latest"
-    restart: always
+    image: ghcr.io/jordan-dalby/bytestash:latest
+    restart: unless-stopped
     volumes:
       - ${APP_DATA_DIR}/data:/data/
     ports:
