@@ -1,5 +1,5 @@
 manifestVersion: 1
-id: Kavyum-bytestash
+id: kavyum-bytestash
 name: ByteStash
 tagline: Code snippet and text storage manager
 icon: https://raw.githubusercontent.com/jordan-dalby/ByteStash/refs/heads/main/client/public/logo192.png
@@ -18,8 +18,8 @@ repo: https://github.com/jordan-dalby/ByteStash
 support: https://github.com/jordan-dalby/ByteStash/issues
 
 gallery:
-  - https://github.com/Kavyum/kav-umbrel-store/blob/main/bytestash/assets/screenshot-1.png
-  - https://github.com/Kavyum/kav-umbrel-store/blob/main/bytestash/assets/screenshot-2.png
+  - https://github.com/Kavyum/kav-umbrel-store/blob/main/kavyum-bytestash/assets/screenshot-1.png?raw=true
+  - https://github.com/Kavyum/kav-umbrel-store/blob/main/kavyum-bytestash/assets/screenshot-2.png?raw=true
 
 releaseNotes: >-
   Initial Umbrel package release.
