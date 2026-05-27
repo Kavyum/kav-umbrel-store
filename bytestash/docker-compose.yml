@@ -1,17 +1,18 @@
+version: "3.7"
+
 services:
   bytestash:
     image: "ghcr.io/jordan-dalby/bytestash:latest"
     restart: always
     volumes:
-      - ${APP_DATA_DIR}/data:/data/snippets
+      - ${APP_DATA_DIR}/data:/data/
     expose:
       - "5000"
     environment:
       # See https://github.com/jordan-dalby/ByteStash/wiki/FAQ#environment-variables
-      ALLOWED_HOSTS: localhost,umbrel.local,100.120.216.73
+      ALLOWED_HOSTS: "*"
       BASE_PATH: ""
-      JWT_SECRET: ${APP_SEED}
-      TOKEN_EXPIRY: 24h
+      JWT_SECRET: zq8mefQUmuqml7tIuDjFlGJHEWkAPlyoqk5hpoDGOb1XO91CbGysHe4WgavOfgRe
       ALLOW_NEW_ACCOUNTS: "true"
       DEBUG: "true"
       DISABLE_ACCOUNTS: "false"
