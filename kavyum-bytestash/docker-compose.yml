@@ -6,7 +6,7 @@ services:
     restart: always
     volumes:
       - ${APP_DATA_DIR}/data:/data/
-    expose:
+    ports:
       - "5000"
     environment:
       # See https://github.com/jordan-dalby/ByteStash/wiki/FAQ#environment-variables
