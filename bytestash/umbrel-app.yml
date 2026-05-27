@@ -1,21 +1,19 @@
 manifestVersion: 1
-
-id: bytestash
+id: Kavyum-bytestash
 name: ByteStash
 tagline: Code snippet and text storage manager
 icon: https://raw.githubusercontent.com/jordan-dalby/ByteStash/refs/heads/main/client/public/logo192.png
-category: developer
+category: Development
 version: "1.5.1"
 port: 5000
-
 description: >-
+
   ByteStash is a self-hosted web application for storing and organizing code snippets and notes.
 
 developer: Jordan Dalby
 website: https://github.com/jordan-dalby/ByteStash
 submitter: Kavyum
 submission: https://github.com/Kavyum/kav-umbrel-store
-
 repo: https://github.com/jordan-dalby/ByteStash
 support: https://github.com/jordan-dalby/ByteStash/issues
 
