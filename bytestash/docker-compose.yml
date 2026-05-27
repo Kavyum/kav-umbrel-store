@@ -3,14 +3,14 @@ services:
     image: "ghcr.io/jordan-dalby/bytestash:latest"
     restart: always
     volumes:
-      - /your/snippet/path:/data/snippets
-    ports:
-      - "5000:5000"
+      - ${APP_DATA_DIR}/data:/data/snippets
+    expose:
+      - "5000"
     environment:
       # See https://github.com/jordan-dalby/ByteStash/wiki/FAQ#environment-variables
       ALLOWED_HOSTS: localhost,umbrel.local,100.120.216.73
       BASE_PATH: ""
-      JWT_SECRET: ZO3j34lsiDab0qZjTQs563ERZqgpSH8JxFDdEdcpWp
+      JWT_SECRET: ${APP_SEED}
       TOKEN_EXPIRY: 24h
       ALLOW_NEW_ACCOUNTS: "true"
       DEBUG: "true"
